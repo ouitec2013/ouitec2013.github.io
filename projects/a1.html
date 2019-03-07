@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta charset="utf-8" />
+		<title>ITEC's Projects | Level A1</title>
+		<link href="../img/Logo ITEC Transperant.png" rel="shortcut icon" />
+		<!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link href="../vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/freelancer.min.css" rel="stylesheet">
+		
+		<style>
+		* {
+			font-family: Tahoma;
+		}
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 8px 12px;
+  margin: 5px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 12px;
+  margin: 5px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 8px 12px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 18px 0 10px 0;
+  position: relative;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  margin: 50px 0px;
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);	
+  width: 420px; /* Full width */
+  height: auto; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+		</style>
+	</head>
+	<body id="page-top" style="z-index: 0 !important;">
+	
+		<!-- LOGIN FORM -->
+	<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <h2 class="text-align">ĐĂNG NHẬP</h2>
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Tên tài khoản</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Mật khẩu</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Đăng nhập</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Ghi nhớ
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Quay lại</button>
+      <span class="psw">Quên <a href="#">mật khẩu?</a></span>
+    </div>
+  </form>
+</div>
+	
+		<!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
+      
+    <div class="container">
+        <a class="navbar-brand js-scroll-trigger animated tada delay-1s" href="../projects.html">
+        <div class="row">
+			LEVEL A1
+        </div>
+        </a>
+        <button style="width: 100px;" class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+          	<li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#study">HỌC TẬP</a>
+            </li>
+			<li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#practice">LUYỆN TẬP</a>
+            </li>
+			<li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#" onclick="document.getElementById('id01').style.display='block'">TÀI KHOẢN</i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+	
+	<!-- Study Section -->
+    <section id="study" style="margin-top: 50px;">
+      <div class="container">
+		<h2 class="text-center text-uppercase text-black">STUDY - HỌC TẬP</h2>
+        <hr class="star-dark mb-5">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+			<ul>
+				<h3>Khi bạn đang ở trình độ sơ cấp A1, bạn nên: </h3>
+				<li> Đọc to các câu hỏi khi thực hành để nhớ các từ vựng dễ dàng hơn.</li>
+				<li> Thực hành lại các bài tập viết lại câu sau khi đọc.</li>
+				<li> Thực hành một số bài nghe (có thể tham khảo trang <a href="https://www.learn-english-now.co/">Learn English Podcasts</a>) từ Hội đồng Anh.</li>
+				<br/><h3>Các điểm ngữ pháp cần nắm</h3>
+				<li> Động từ cơ bản ở thì Hiện tại đơn ở thể khẳng định, phủ định, nghi vấn.</li>
+				<li> Một số trạng từ tần xuất cơ bản: usually, sometimes.</li>
+				<li> Câu hỏi số lượng: how much, how many? Some, any.</li>
+				<li> Biểu hiện khả năng: sử dụng can / can not (can't).</li>
+				<li> Thì quá khứ đơn và động từ TOBE: was / were.</li>
+				<li> Thì tương lai đơn: Ex: I will go.</li>
+				<li> Thì quá khứ đơn với động từ thông thường: Ex: I looked! - I listened.</li>
+				<br/><h3>Các điểm từ vựng cần nắm</h3>
+				<li> Tính từ cơ bản: từ trái nghĩa, màu sắc.</li>
+				<li> Hỏi thời gian: what time is it? It’s half past three.</li>
+				<li> Mua sắm: các loại cửa hàng, hỏi về nhu cầu.</li>
+				<li> Hỏi đường: straight ahead, turn left / right.</li>
+				<li> Tháng và năm.</li>
+				<li> Thời tiết: what’s the weather like? It’s raining.</li>
+				<li> Tính từ so sánh hơn: bigger, nicer, etc, </li>
+			</ul>
+          </div>
+        </div>
+      </div>
+    </section>
+	
+	<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-to-top d-lg-none position-fixed ">
+      <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+        <i class="fa fa-chevron-up"></i>
+      </a>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="../vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="../js/jqBootstrapValidation.js"></script>
+    <script src="../js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="../js/freelancer.min.js"></script>
+	<div class="copyright py-4 text-center text-white">
+      <div class="container">
+        <strong style="font-size:20px;">Copyright &copy; ITEC 2019</strong>
+      </div>
+    </div>
+	</body>
+</html>
