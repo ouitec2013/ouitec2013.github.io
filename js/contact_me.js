@@ -73,3 +73,11 @@ $(function() {
 $('#name').focus(function() {
   $('#success').html('');
 });
+
+
+var goTo = function(link){
+console.log(link);
+	/*let currentLink = window.location.href.subString(0, window.location.href.indexOf('.html'));
+	currentLink += '/' + link + '.html';
+	window.location.href = currentLink;*/
+}
