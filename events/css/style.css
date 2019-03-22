@@ -86,6 +86,19 @@ a {
   color: white;
 }
 
+#web-btn {
+  color: #FFF;
+  font-size: 15px;
+  text-shadow: 0.2px 0.3px;
+  background: #AA99FF;
+  padding: 10px;
+}
+
+#web-btn:hover {
+  background: #FFF;
+  color: #AA99FF;
+}
+
 @media only screen and (max-width: 600px) {
   h1 {
     font-size: 18px;
@@ -96,6 +109,7 @@ a {
   h3 {
     font-size: 15px;
   }
+
   iframe {
     width: 220px;
     height: 120px;
