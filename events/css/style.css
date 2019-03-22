@@ -1,0 +1,103 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Tahoma;
+  background: #666666;
+}
+
+.main {
+  padding: 20px;
+  text-align: center;
+}
+
+input[type="number"] {
+  height: 35px;
+  width: 250px;
+  border-radius: 5px;
+  font-size: 18px;
+  text-align: center;
+  border: none;
+}
+
+input[type="number"]:focus {
+  outline: 5px solid lightblue;
+ }
+
+input[type="submit"] {
+  height: 42px;
+  font-size: 18px;
+  border: none;
+  margin-top: 20px;
+  width: 150px;
+  border-radius: 20px;
+}
+
+input[type="submit"]:hover {
+  color: #FFF;
+  background: lightblue;
+}
+
+.fab, .fas {
+  color: white;
+  padding-left: 10px;
+}
+
+.fab:hover, .fas:hover {
+  color: #CCCCCC;
+  transform: scale(1.2);
+}
+
+.Event-Discription {
+  text-align: justify;
+  margin: 0 auto;
+  line-height: 25px;
+  color: lightblue;
+}
+
+.Event-Discription > .first {
+  border-left: 3px solid #FFF;
+  padding: 20px 10px;
+  color: lightblue;
+}
+
+.timer {
+  margin: 20px 0;
+  text-align: center;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+#register {
+  display: block;
+  padding: 10px;
+  font-size: 25px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 50px;
+  color: orange;
+  border-radius: 5px;
+}
+
+#register:hover {
+  background: orange;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 18px;
+  }
+  h2 {
+    font-size: 16px;
+  }
+  h3 {
+    font-size: 15px;
+  }
+  iframe {
+    width: 220px;
+    height: 120px;
+  }
+}
