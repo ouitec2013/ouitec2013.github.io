@@ -73,7 +73,7 @@ a {
 #register {
   display: block;
   padding: 10px;
-  font-size: 25px;
+  font-size: 20px;
   margin: 0 auto;
   text-align: center;
   margin-bottom: 50px;
@@ -101,17 +101,17 @@ a {
 
 @media only screen and (max-width: 600px) {
   h1 {
-    font-size: 18px;
+    font-size: 20px;
   }
   h2 {
-    font-size: 16px;
+    font-size: 19px;
   }
   h3 {
-    font-size: 15px;
+    font-size: 18px;
   }
 
   iframe {
-    width: 220px;
-    height: 120px;
+    width: 280px;
+    height: 285px;
   }
 }
