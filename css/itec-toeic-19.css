@@ -10,7 +10,7 @@ body {
   text-align: center;
 }
 
-input[type="number"] {
+input[type="text"] {
   height: 35px;
   width: 250px;
   border-radius: 5px;
@@ -19,7 +19,7 @@ input[type="number"] {
   border: none;
 }
 
-input[type="number"]:focus {
+input[type="text"]:focus {
   outline: 5px solid lightblue;
  }
 
