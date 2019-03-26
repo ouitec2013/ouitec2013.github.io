@@ -32,7 +32,7 @@
         <h2 style="text-align: center; color: lightblue; margin-bottom: 50px;">KIỂM TRA THÔNG TIN THÍ SINH<br/>KÌ THI THỬ TIẾNG ANH<br/>"CHECK YOUR TOEIC 2019"<br/></h2>
         <input type="text" id="std-id" required placeholder="_ Nhập MSSV _" /><br/>
         <input type="submit" onClick="GetInfo()" value="Kiểm tra" />
-        <p>Cập nhật gần nhất: 25/03/2019 15:55:00</p>
+        <p>Cập nhật gần nhất: 26/03/2019 16:30:00</p>
         <p style="color: orange;"><i>( Thí sinh vui lòng kiểm tra kĩ thông tin.<br/>Nếu có bất kì sai sót xin liên hệ ngay cho chúng tôi! )</i></p>
         <hr style="margin-top: 50px;" />
         <h3 style="text-align: center; color: lightblue; padding-top: 20px;">ĐỘI NGŨ THÀNH VIÊN<br/>OU-IT'S ENGLISH CLUB</h3>
@@ -44,6 +44,32 @@
           <p>Địa chỉ: Đại học Mở - 371 Nguyễn Kiệm<p/>
           <a id="web-btn" href="https://ouitec2013.github.io/">ITEC'S WEBSITE</a>
         </div>
+      </div>
+
+      <div id="std-info-null">
+        <h3>BẠN CHƯA NHẬP MÃ SỐ SINH VIÊN</h3>
+        <br/>
+        <button class="cancel-btn" onclick="document.getElementById('std-info-null').style.display = 'none';">THOÁT</button>
+      </div>
+
+      <div id="std-info-wrong">
+        <h3>KHÔNG TÌM THẤY THÔNG TIN THÍ SINH</h3>
+        <br/>
+        <button class="cancel-btn" onclick="document.getElementById('std-info-wrong').style.display = 'none';">THOÁT</button>
+      </div>
+
+      <div id="std-info-tab">
+        <h2>THÔNG TIN THÍ SINH DỰ THI</h2>
+        <h3>"CHECK YOUR TOEIC 2019"</h3>
+        <ol>
+          <li>Họ tên: <span id="info-name"></span></li>
+          <li>Mã số sinh viên: <span id="info-id"></span></li>
+          <li>Gmail: <span id="info-gmail"></span></li>
+          <li>Số điện thoại: <span id="info-phone"></span></li>
+          <li>Mã dự thi: <span id="info-code"></span></li>
+          <li>Kết quả đặt chỗ: <span id="info-confirm"></span></li>
+        </ol>
+        <button class="cancel-btn" onclick="document.getElementById('std-info-tab').style.display = 'none';">XÁC NHẬN</button> <button class="cancel-btn"><a href="https://www.facebook.com/ouitenglishclub/" target="_blank" style="color: red;">BÁO SAI</a></button>
       </div>
     <script  src="../js/itec-toeic-19.js"></script>
 </body>
