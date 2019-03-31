@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>ITEC | CHECK YOUR TOEIC 2019</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CHECK YOUR TOEIC 2019">
+  <meta name="keywords" content="itec,toeic,english,language,contest">
+  <meta name="author" content="Jason Nguyen">
+  <link href="../img/Logo ITEC Transperant.png" rel="shortcut icon">
+  <link rel="stylesheet" href="../css/itec-toeic-19.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+      <div class="main">
+        <h1 style="text-align: center; color: lightblue; margin-bottom: 50px;"><marquee>"CHECK YOUR TOEIC 2019"</marquee></h1>
+        <hr/>
+        <h3 style="color: lightblue;">CÂU LẠC BỘ TIẾNG ANH<br/>KHOA CÔNG NGHỆ THÔNG TIN</h3>
+        <img src="../img/Logo ITEC Transperant.png" width="200px">
+        <div class="Event-Discription">
+          <div class="timer">
+            <h2 style="text-align: center; margin-top: 10px; font-weight: bold;">THỜI GIAN THI<br/><br/>08:30 NGÀY 31/ 03/ 2019</h2>
+            <h2 style="color: yellow;" id="timer"></h2>
+          </div>
+          <button id="register"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdERXNAXpVCWfXwdPAWi31vFb7-2nH8lluaqQn3Fbsqi0hQyg/viewform">&rang; ĐĂNG KÍ NGAY &lang;</a></button>
+          <iframe style="background: white; display: block; margin: 10px auto;" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fouitenglishclub%2Fposts%2F1503378149797272&width=500" width="500" height="701" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+        </div>
+
+        <hr style="margin-top: 50px;" />
+        <h2 style="text-align: center; color: lightblue; margin-bottom: 50px;">KIỂM TRA THÔNG TIN THÍ SINH<br/>KÌ THI THỬ TIẾNG ANH<br/>"CHECK YOUR TOEIC 2019"<br/></h2>
+        <input type="text" id="std-id" required placeholder="_ Nhập MSSV _" /><br/>
+        <input type="submit" onClick="GetInfo()" value="Kiểm tra" />
+        <p>Cập nhật gần nhất: 29/03/2019 17:38</p>
+        <p style="color: orange;"><i>( Thí sinh vui lòng kiểm tra kĩ thông tin.<br/>Nếu có bất kì sai sót xin liên hệ ngay cho chúng tôi! )</i></p>
+        <hr style="margin-top: 50px;" />
+        <h3 style="text-align: center; color: lightblue; padding-top: 20px;">ĐỘI NGŨ THÀNH VIÊN<br/>OU-IT'S ENGLISH CLUB</h3>
+        <div style="text-align: center;">
+          <a href="https://www.facebook.com/ouitenglishclub/" title="FANPAGE OU-IT'S ENGLISH CLUB"><i class="fab fa-facebook-square"></i></a>
+          <a href="mailto: ouit.englishclub2013@gmail.com" title="GMAIL ITEC: ouit.englishclub2013@gmail.com"><i class="fab fa-google-plus-g"></i></a>
+          <br/>
+          <div style="text-align: center; margin-top: 10px; color: lightblue;"><p>Hotline: 0979 541 934 (Mr. Bảy)</p>
+          <p>Địa chỉ: Đại học Mở - 371 Nguyễn Kiệm<p/>
+          <a id="web-btn" href="https://ouitec2013.github.io/">ITEC'S WEBSITE</a>
+        </div>
+      </div>
+
+      <div id="std-info-null">
+        <h3>BẠN CHƯA NHẬP MÃ SỐ SINH VIÊN</h3>
+        <br/>
+        <button class="cancel-btn" onclick="document.getElementById('std-info-null').style.display = 'none';">THOÁT</button>
+      </div>
+
+      <div id="std-info-wrong">
+        <h3>KHÔNG TÌM THẤY THÔNG TIN THÍ SINH</h3>
+        <br/>
+        <button class="cancel-btn" onclick="document.getElementById('std-info-wrong').style.display = 'none';">THOÁT</button>
+      </div>
+
+      <div id="std-info-tab">
+        <h2>THÔNG TIN THÍ SINH DỰ THI</h2>
+        <h3>"CHECK YOUR TOEIC 2019"</h3>
+        <ol>
+          <li>Họ tên: <span id="info-name"></span></li>
+          <li>Mã số sinh viên: <span id="info-id"></span></li>
+          <li>Gmail: <span id="info-gmail"></span></li>
+          <li>Số điện thoại: <span id="info-phone"></span></li>
+          <li>Mã dự thi: <span id="info-code"></span></li>
+          <li>Kết quả đặt chỗ: <span id="info-confirm"></span></li>
+        </ol>
+        <button class="cancel-btn" onclick="document.getElementById('std-info-tab').style.display = 'none';">XÁC NHẬN</button> <button class="cancel-btn"><a href="https://www.facebook.com/ouitenglishclub/" target="_blank" style="color: red;">BÁO SAI</a></button>
+      </div>
+    <script  src="../js/itec-toeic-19.js"></script>
+</body>
+
+</html>
