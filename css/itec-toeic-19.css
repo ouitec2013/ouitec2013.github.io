@@ -13,18 +13,20 @@ body {
 input[type="text"] {
   height: 35px;
   width: 250px;
-  border-radius: 5px;
+  outline: none;
+  border-radius: 10px;
   font-size: 18px;
   text-align: center;
   border: none;
 }
 
 input[type="text"]:focus {
-  outline: 5px solid lightblue;
+  box-shadow: 0 0 3pt 2pt lightblue;
  }
 
 input[type="submit"] {
   height: 42px;
+  outline: none;
   font-size: 18px;
   border: none;
   margin-top: 20px;
