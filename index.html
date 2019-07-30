@@ -1,779 +1,412 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="shortcut icon" type="text/css" href="img/Logo-ITEC-Transperant.png">
+		<title>OU-IT's English Club</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Pacifico" />
+		<link href="css/home.css" rel="stylesheet"/>
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	</head>
+	<body>
+		<div class="main">
+			<!-- TOP MENU -->
+			<nav class="navbar navbar-expand-lg navbar-light boxShadow" style="background: #2c3e50;">
+			  <a class="navbar-brand text-info" href="#">
+			  	<div class="row">
+					<svg viewBox="0 0 7000 600">
+		            <symbol id="s-text">
+		                <text text-anchor="middle" x="50%" y="80%" style="font-family: Tahoma; font-size: 500px;">WELCOME TO ITEC!</text>
+		            </symbol>
+		                <g class="g-ants">
+		                    <use xlink:href="#s-text" class="text-copy"></use>
+		                    <use xlink:href="#s-text" class="text-copy"></use>
+		                    <use xlink:href="#s-text" class="text-copy"></use>
+		                    <use xlink:href="#s-text" class="text-copy"></use>
+		                    <use xlink:href="#s-text" class="text-copy"></use>
+		                </g>
+		            </svg>
+            	</div>
+			  </a>
+			  <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
 
-  <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>OU-IT's English Club</title>
-    <link href="img/Logo ITEC Transperant.png" rel="shortcut icon" />
-
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom fonts for this template -->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-
-    <!-- Plugin CSS -->
-    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
-
-    <!-- Custom styles for this template -->
-    <link href="css/freelancer.min.css" rel="stylesheet">   
-    <style>
-    	.font-text{
-			font-family: Roboto;
-			font-size: 20px;
-			text-align:justify;
-			text-decoration:none;
-			}
-		.center-align {
-			text-align:center;
-		}
-		  /* Make the image fully responsive */
-		.carousel-inner img {
-			  width: 100%;
-			  height: 100%;
-			}
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link text-light" href="#news">ITEC NEWS<span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-light" href="#about">ABOUT US</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-light" href="#activities">ACTIVITIES</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-light" href="#contact">CONTACT</a>
+					</li>
+				</ul>
+				<a class="nav-link text-light" href="#"><img src="img/Logo-Khoa-Truong-CLB.png" width="200" /></a>
+			  </div>
+			</nav>
 			
-		<!-- For animaition text -->
-		
-		@import url(https://fonts.googleapis.com/css?family=Montserrat);
-
-		html, body{
-		  height: 100%;
-		  font-weight: 800;
-		}
-		
-		svg {
-			display: inline;
-			font: 20.5em 'Montserrat';
-			width: 300px;
-			height: 30px;
-			margin: 0 auto;
-		}
-		
-		@media only screen and (max-width: 420px){
-		  svg {
-			width: 250px;
-		}
-		}
-		
-		@media only screen and (max-width: 350px){
-		  svg {
-			width: 200px;
-		}
-		}
-		
-		.text-copy {
-			fill: none;
-			stroke: white;
-			stroke-dasharray: 6% 29%;
-			stroke-width: 15px;
-			stroke-dashoffset: 0%;
-			animation: stroke-offset 5.5s infinite linear;
-		}
-		
-		.text-copy:nth-child(1){
-			stroke: #FFFFFF; <!-- #4D163D -->
-			animation-delay: -1;
-		}
-		
-		.text-copy:nth-child(2){
-			stroke: #FFFFFF;
-			animation-delay: -2s;
-		}
-		
-		.text-copy:nth-child(3){
-			stroke: #FFFFFF;
-			animation-delay: -3s;
-		}
-		
-		.text-copy:nth-child(4){
-			stroke: #FFFFFF;
-			animation-delay: -4s;
-		}
-		
-		.text-copy:nth-child(5){
-			stroke: #FFFFFF;
-			animation-delay: -5s;
-		}
-		
-		@keyframes stroke-offset{
-			100% {stroke-dashoffset: -35%;}
-		}
-    </style>
-
-  </head>
-
-  <body id="page-top">
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
-      
-    <div class="container">
-        <a class="navbar-brand js-scroll-trigger animated tada delay-1s" href="#page-top">
-        <div class="row">
-			<svg viewBox="0 0 7000 600">
-            <symbol id="s-text">
-                <text text-anchor="middle" x="50%" y="80%">WELCOME TO ITEC!</text>
-            </symbol>
-        
-                <g class = "g-ants">
-                    <use xlink:href="#s-text" class="text-copy"></use>
-                    <use xlink:href="#s-text" class="text-copy"></use>
-                    <use xlink:href="#s-text" class="text-copy"></use>
-                    <use xlink:href="#s-text" class="text-copy"></use>
-                    <use xlink:href="#s-text" class="text-copy"></use>
-                </g>
-            </svg>
-            </div>
-        </a>
-        <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-          	<li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#projects">Projects</a>
-            </li>
-			<li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#news">ITEC News</a>
-            </li>
-            <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Activities</a>
-            </li>
-            <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About us</a>
-            </li>
-            <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="https://docs.google.com/forms/d/e/1FAIpQLSfTEGCkurfm93idzsBT1y9OjgbfOaWcsXSkjJ_HKROX_8-Aqw/viewform" target="_blank">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Header -->
-    <header class="masthead bg-primary text-white text-center">
-      <div class="container">
-        <img class="img-fluid mb-5 d-block mx-auto" src="img/Logo ITEC Transperant.png" width="200px" alt="itec_logo.png">
-        <h1 class="text-uppercase mb-0" style="font-size:50px !important;">OU-IT'S ENGLISH CLUB</h1>
-        <hr class="star-light">
-        <h2 class="font-weight-light mb-0" style="font-family: 'Comic Sans MS', cursive; font-size:25px;">LEAD YOUR PASSION</h2>
-      </div>
-    </header>
-	
-	<!-- Project Section -->
-    <section id="projects">
-      <div class="container">
-        <h2 class="text-center text-uppercase text-secondary mb-0">ITEC'S PROJECTS</h2>
-        <hr class="star-dark mb-5">
-		<!-- <p style="color: darkblue; text-shadow: 2px 2px #333333; font-size: 25px; text-align: center;">DESCRIPTION ABOUT ITEC'S PROJECTS</p>
-		<p style="font-family: Tahoma;">Thời đại công nghệ phát triển - thời đại 4.0. Tại sao không ứng dụng công nghệ vào việc học, nhất là việc học tập môn tiếng Anh? Môn học tưởng chừng khó nhằn cũng sẽ dễ dàng thôi!! Đón chờ các sản phẩm đến từ ITEC nhé!! Yêuuu cả nhà!!!</p> -->
-		<div class="text-center mt-4">
-          <a class="btn btn-xl btn-outline-dark" href="projects.html" target="_blank">
-            <i class="fas mr-2"></i>
-            VISIT ITEC'S PROJECTS
-          </a>
-        </div>
-        </div>
-      </div>
-    </section>
-	
-	<!-- ITEC News Section -->
-    <section class="text-white mb-0" id="news" style="background:#007bff;">
-      <div class="container">
-        <h2 class="text-center text-uppercase text-white">ITEC NEWS</h2>
-        <hr class="star-light mb-5">
-        <div class="font-text">
+			<!-- SECTION STARTER -->
+			<div class="jumbotron text-center bg-dark" style="margin-bottom: 0px; padding: 100px 0px 120px 0px;">
+				<div class="mt-5">
+					<img src="img/Logo-ITEC-Transperant.png" width="180" />
+				</div>
+				<h1 class="text-white">OU-IT'S ENGLISH CLUB</h1>
+				<div style="color: orange; font-size: 35px;">----<i class="fa fa-star-o"></i>----</div>
+				<h4 style="font-family: 'Comic Sans MS', cursive; font-size:25px; color: white;">LEAD YOUR PASSION</h4>
+			</div>
 			
-			<!-- ====================== SLIDESHOW ============================= -->
-              <div id="demo" class="carousel slide" data-ride="carousel">
-                
-                  <!-- Indicators -->
-                  <ul class="carousel-indicators">
-                    <li data-target="#demo" data-slide-to="0" class="active"></li>
-                    <li data-target="#demo" data-slide-to="1"></li>
-                    <li data-target="#demo" data-slide-to="2"></li>
-					<li data-target="#demo" data-slide-to="3"></li>
-					<li data-target="#demo" data-slide-to="4"></li>
-                  </ul>
-                  
-                  <!-- The slideshow -->
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-						<div style="text-align: center;"><p style="color:blue; font-weight: bold; font-size:30px;">CHECK YOUR TOEIC 2019</p><p style="color: #EEEEEE; font-size: 12px;">Updated 12 - 03 - 2019</p>Nhằm đáp ứng nhu cầu ngày càng cao của phần đông học sinh, sinh viên về trình độ Tiếng Anh, cũng như tạo không khí thi cử nghiêm túc, chuẩn bị cho các kỳ thi quan trọng, CLB ITEC tổ chức kì thi thử TOEIC dành cho sinh viên<br/>
-
-            - Giúp sinh viên có điều kiện làm quen với các bài thi TOEIC.<br/>
-- Giúp sinh viên tự đánh giá kiến thức, trình độ Tiếng Anh của mình.<br/>
-- Tích lũy kinh nghiệm, ổn định tâm lý để có sự tự tin cần thiết khi đi thi thật.<br/> 
-- Đăng kí đặt chỗ thi thành công sinh viên còn được cộng 5 đrl vào Điều 01.<br/>
-            <a href="https://www.facebook.com/ouitenglishclub/photos/a.360633020738463/1503377293130691/?type=3&theater"> Chi tiết</a></div><br/>
-                      <img style="height:500px !important; width: auto; margin: 0 auto !important; display: block; padding-bottom: 60px;" class="img-fluid mb-5" src="img/ITEC News/toeic-test-19.png" alt="CHECK YOUR TOEIC 2019" max-height="200px" />
-                    </div>
-                    
+			<!-- SECTION NEWS -->
+			<div class="jumbotron text-center" id="news" style="margin-bottom: -50px; background: url('img/bg2.png'); background-size: cover;">
+				<h2 class="text-center linearAnimObj" style="color: #4080ff;">ITEC NEWS</h2>
+				<div style="color: white; font-size: 35px;">----<i class="fa fa-star-o"></i>----</div>
+				
+				<!-- Slide show -->
+				<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+				  <div class="carousel-inner">
+					  <!-- First post -->
+					<div class="carousel-item active">
+					  <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fouitenglishclub%2Fposts%2F1614043055397447&width=500" width="500" height="789" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+					</div>
+					  
+					  <!-- 2nd post -->
 					<div class="carousel-item">
-						<div style="text-align: center;"><p style="color:blue; font-weight: bold; font-size:30px;">[ HỖ TRỢ TRUYỀN THÔNG ]<br/>🔥🔥SIÊU PHẨM NHÀ VOIS ĐÃ RA LÒ!!! 🔥🔥</p><p style="color: #EEEEEE; font-size: 12px;">Updated 17 - 02 - 2019</p>Năm mới năm me như được nhân 10 khi sản phẩm nóng hổi phục vụ các bạn học sinh/sinh viên chúng mình đã ra lò! ❤ <br/>Mọi tâm huyết, chất xám, thời gian chúng mình đã rất nỗ lực để đem lại một sản phẩm hoàn thiện nhất. Và điều đặc biệt không chỉ nằm ở nội dung xoay quanh những tâm tư của các bạn, mà của cả các bạn du học sinh xa xứ, những "Người truyền lửa" được góp mặt trong kỳ báo #ĐẦU_TIÊN này ❤<br/><a href="https://www.facebook.com/ouitenglishclub/posts/1486892058112548"> Đọc thêm</a></div><br/>
-                      <img class="img-fluid mb-5" src="img/ITEC News/tap-chi-vois.jpg" alt="Tạp chí VOIS" style="height:500px !important; width: auto; margin: 0 auto !important; display: block; padding-bottom: 60px;" />
-                    </div> 
-					
+					  <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fouitenglishclub%2Fposts%2F1529821657152921&width=500" width="500" height="675" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+					</div>
+					  
+					  <!-- 3rd post -->
 					<div class="carousel-item">
-						<div style="text-align: center;"><p style="color:blue; font-weight: bold; font-size:30px;">[ HỖ TRỢ TRUYỀN THÔNG ]<br/>[CUỘC THI KHỞI NGHIỆP KINH DOANH LẦN VIII - 2019][ĐÃ ĐẾN LÚC BIẾN NHỮNG ĐIỀU KÌ DIỆU TRỞ THÀNH SỰ THỰC]</p><p style="color: #EEEEEE; font-size: 12px;">Updated 19 - 02 - 2019</p>⚠ Khởi nghiệp Kinh doanh là sân chơi dành cho tất cả các bạn sinh viên đang ấp ủ những ý tưởng mới mẻ, sáng tạo phát triển mạnh mẽ, có tính khả thi cao và áp dụng tốt vào thực tiễn. Vào tháng 2 này, Khởi nghiệp Kinh doanh lần VIII - 2019 đã chính thức trở lại, mang đến những đổi mới sáng tạo và hấp dẫn. 👏👏
-Hãy cùng KNKD điểm qua hành trình cuộc thi và những thông tin cần thiết nhé!😉😉
-<br/><a href="https://www.facebook.com/ouitenglishclub/photos/p.1488375571297530/1488375571297530/?type=3&theater"> Đọc thêm</a></div><br/>
-                      <img class="img-fluid mb-5" src="img/ITEC News/KhoiNghiepKD2019-GPA.png" alt="Khởi nghiệp Kinh doanh - GPA" style="height:500px !important; width: auto; margin: 0 auto !important; display: block; padding-bottom: 60px;" />
-                    </div>
+					  <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fouitenglishclub%2Fposts%2F1532732253528528&width=500" width="500" height="694" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+					</div>
+				  </div>
+				  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				  </a>
+				  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				  </a>
+				</div>
+			</div>
+			
+			<!-- SECTION ABOUT US -->
+			<div class="jumbotron" id="about" style="margin-bottom: -50px; background: url('img/bg2.jpg'); background-size: cover;">
+				<h2 class="text-center linearAnimObj" style="color: yellow;">ABOUT US</h2>
+				<div style="color: white; font-size: 35px; text-align: center;">----<i class="fa fa-star-o"></i>----</div>
+				
+				<div class="row">
+					<div class="col-lg-6 col-md-12">
+						<p class="p-2 text-justify" style="color: #a1eaf7; font-family: Pacifico; background: rgba(107, 107, 107, 0.7); border-radius: 10px;">OU-IT’s English Club, directly under Faculty of Information Technology. Established on Aug 10th, 2013, running by students with highly support from Lectures. With our slogan “Lead your passion”, we’re always try our best to inspire students to learn English more effectively. ITEC’s activities are intended to create an active environment for all English lovers, through those things with us, you may improve yourself in both soft-skill and English-skill which are such as teamwork, presenting, critical thinking, … or speaking and listening skill (in English) – those are not offer much in our lesson in the school! Moreover, how can it be when you’re an ITEC member? Like a home! You may practise more with us, focus on soft-skill and training your attitude, those are what the employee want to see from you, more than just knowledge!<br/>
+							So, what did, what do, and what will we do? If you want to try a real TOEIC test but with just 1$ for fee, come to our TOEIC Mock Test. If you want to have an English environment or just a partner to practise speaking and listening English, come to our Speaking English Activities. There are lots of documents to learn English on the Internet but you don’t have able to find out which one is suit for you, or just like you don’t confide in those things, don’t be worry, we will offer for you on our Fanpage! Our secret activities are waiting for you to take an adventure! And now, follow us, and enjoy undergraduate time with us!</p>
+					</div>
 					
-					<div class="carousel-item">
-						<div style="text-align: center;"><p style="color:blue; font-weight: bold; font-size:30px;">[ HỖ TRỢ TRUYỀN THÔNG ]<br/>IN TUNE 2019 - NƠI BẠN CÓ THỂ “ĐIÊN” THEO CÁCH CỦA MÌNH</p><p style="color: #EEEEEE; font-size: 12px;">Updated 23 - 02 - 2019</p>Có phải bạn đam mê ca hát? 😤 Đã bao giờ bạn ngắm nhìn ca sĩ trình diễn trên sân khấu và mong ước một ngày nào đó mình có thể được như họ? 🙆🏻‍♀️ Bạn muốn khẳng định cá tính, chia sẻ “chất riêng” của chính bản thân mình nhưng chưa có nhiều sân khấu cho bạn thể hiện? ⭐️<br/><a href="https://www.facebook.com/ouitenglishclub/photos/a.360633020738463/1490543694414051/?type=3&theater"> Đọc thêm</a></div><br/>
-                      <img class="img-fluid mb-5" src="img/ITEC News/intune19.png" alt="IN TUNE 2019" style="height:500px !important; width: auto; margin: 0 auto !important; display: block; padding-bottom: 60px;" />
-                    </div>
+					<!--MEMBER LIST -->
+					<div class="col-lg-6 col-md-12">
+						
+						<!-- Slide show -->
+						<div id="carouselExampleControls1" class="carousel slide" data-ride="carousel" style="line-height: 70px; margin-top: 50px;">
+						  <div class="carousel-inner memlist">
+							  <!-- 1st mem -->
+							<div class="carousel-item active text-center">
+								<img src="img/member/Bay.png" width="130"/>
+								<h3>Nguyễn Văn Bảy</h3>
+								<p class="text-light mem-role"><i class="fa fa-info-circle"></i> President</p>
+								<div>
+									<a class="btn btn-md bg-dark" href="https://www.facebook.com/NVB.68P1">FB Profile</a>
+									<a class="btn btn-md bg-dark" href="mailto:1751012088bay@ou.edu.vn">Send Email</a>
+								</div>
+							</div>
+							  
+							  <!-- 2nd mem -->
+							<div class="carousel-item text-center">
+								
+								<img src="img/member/PhucPhon.png" width="130"/>
+								<h3>Đỗ Tiến Phúc</h3>
+								<p class="text-light mem-role"><i class="fa fa-info-circle"></i> Vice President</p>
+								<div>
+									<a class="btn btn-md bg-dark" href="https://www.facebook.com/beanphuc">FB Profile</a>
+									<a class="btn btn-md bg-dark" href="mailto:1651010110phuc@ou.edu.vn">Send Email</a>
+								</div>
+							</div>
+							  
+								
+							  <!-- 3rd mem -->
+							<div class="carousel-item text-center">
+								
+								<img src="img/member/DucThang.png" width="130"/>
+								<h3>Nguyễn Đức Thắng</h3>
+								<p class="text-light mem-role"><i class="fa fa-info-circle"></i> Member</p>
+								<div>
+									<a class="btn btn-md bg-dark" href="https://www.facebook.com/profile.php?id=100009553911992">FB Profile</a>
+									<a class="btn btn-md bg-dark" href="mailto:1854010388thang@ou.edu.vn">Send Email</a>
+								</div>
+							</div>
+							  
+							  <!-- 4th mem -->
+							<div class="carousel-item text-center">
+								
+								<img src="img/member/XuanTrang.png" width="130"/>
+								<h3>Trần Võ Xuân Trang</h3>
+								<p class="text-light mem-role"><i class="fa fa-info-circle"></i> Member</p>	
+								<div>
+									<a class="btn btn-md bg-dark" href="https://www.facebook.com/mary.che.14811">FB Profile</a>
+									<a class="btn btn-md bg-dark" href="mailto:1854020192trang@ou.edu.vn">Send Email</a>
+								</div>
+							</div>
+							  
+							  <!-- 5th mem -->
+							<div class="carousel-item text-center">
+								
+								<img src="img/member/LuongPhuc.png" width="130"/>
+								<h3>Lương Phúc</h3>
+								<p class="text-light mem-role"><i class="fa fa-info-circle"></i> Member</p>	
+								<div>
+									<a class="btn btn-md bg-dark" href="https://www.facebook.com/phuclg24">FB Profile</a>
+									<a class="btn btn-md bg-dark" href="mailto:1854050086phuc@ou.edu.vn">Send Email</a>
+								</div>
+							</div>
+							  
+							  <!-- 6th mem -->
+							<div class="carousel-item text-center">
+								
+								<img src="img/member/NhuQuynh.png" width="130"/>
+								<h3>Phan Thị Như Quỳnh</h3>
+								<p class="text-light mem-role"><i class="fa fa-info-circle"></i> Member</p>	
+								<div>
+									<a class="btn btn-md bg-dark" href="https://www.facebook.com/nhuquynh.pham.1042">FB Profile</a>
+									<a class="btn btn-md bg-dark" href="mailto:1851050124quynh@ou.edu.vn">Send Email</a>
+								</div>
+							</div>
+							  
+							  <!-- 7th mem -->
+							<div class="carousel-item text-center">
+								
+								<img src="img/member/QuocDung.png" width="130"/>
+								<h3>Lý Quốc Dũng</h3>
+								<p class="text-light mem-role"><i class="fa fa-info-circle"></i> Member</p>	
+								<div>
+									<a class="btn btn-md bg-dark" href="https://www.facebook.com/lyquocdung.ly.1">FB Profile</a>
+									<a class="btn btn-md bg-dark" href="mailto:1851050025dung@ou.edu.vn">Send Email</a>
+								</div>
+							</div>
+							  
+							  <!-- 8th mem -->
+							<div class="carousel-item text-center">
+								
+								<img src="img/member/Trong.png" width="130"/>
+								<h3>Nguyễn Đỗ Trọng</h3>
+								<p class="text-light mem-role"><i class="fa fa-info-circle"></i> Member</p>	
+								<div>
+									<a class="btn btn-md bg-dark" href="https://www.facebook.com/profile.php?id=100015580874866">FB Profile</a>
+									<a class="btn btn-md bg-dark" href="mailto:1851050159trong@ou.edu.vn">Send Email</a>
+								</div>
+							</div>
+							  
+							  <!-- 9th mem -->
+							<div class="carousel-item text-center">
+								
+								<img src="img/member/TrongTin.png" width="130"/>
+								<h3>Trần Trọng Tín</h3>
+								<p class="text-light mem-role"><i class="fa fa-info-circle"></i> Member</p>	
+								<div>
+									<a class="btn btn-md bg-dark" href="https://www.facebook.com/profile.php?id=100010994140347">FB Profile</a>
+									<a class="btn btn-md bg-dark" href="mailto:1851050148tin@ou.edu.vn">Send Email</a>
+								</div>
+							</div>
+							  
+							  <!-- 10th mem -->
+							<div class="carousel-item text-center">
+								
+								<img src="img/member/VanHau.png" width="130"/>
+								<h3>Ngô Văn Hậu</h3>
+								<p class="text-light mem-role"><i class="fa fa-info-circle"></i> Member</p>	
+								<div>
+									<a class="btn btn-md bg-dark" href="https://www.facebook.com/haungo1999">FB Profile</a>
+									<a class="btn btn-md bg-dark" href="mailto:1851050043hau@ou.edu.vn">Send Email</a>
+								</div>
+							</div>
+							  
+							  <!-- 11th mem -->
+							<div class="carousel-item text-center">
+								
+								<img src="img/member/VanTien.png" width="130"/>
+								<h3>Võ Ngô Văn Tiền</h3>
+								<p class="text-light mem-role"><i class="fa fa-info-circle"></i> Member</p>	
+								<div>
+									<a class="btn btn-md bg-dark" href="https://www.facebook.com/vantien308">FB Profile</a>
+									<a class="btn btn-md bg-dark" href="mailto:1851010134tien@ou.edu.vn">Send Email</a>
+								</div>
+							</div>
+							  
+							  <!-- 12th mem -->
+							<div class="carousel-item text-center">
+								<img src="img/member/VanTrung.png" width="130"/>
+								<h3>Phan Văn Trung</h3>
+								<p class="text-light mem-role"><i class="fa fa-info-circle"></i> Member</p>	
+								<div>
+									<a class="btn btn-md bg-dark" href="https://www.facebook.com/VanTrung19042000">FB Profile</a>
+									<a class="btn btn-md bg-dark" href="mailto:1851050165trung@ou.edu.vn">Send Email</a>
+								</div>
+							</div>
+						  </div>
+						  <a class="carousel-control-prev" href="#carouselExampleControls1" role="button" data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						  </a>
+						  <a class="carousel-control-next" href="#carouselExampleControls1" role="button" data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						  </a>
+						</div>
+					</div>
+				</div>
+				<a href="https://www.facebook.com/ouitenglishclub/videos/715369758798249/" class="btn btn-xl bg-success btn-block text-light">VIDEO INTRODUCTION</a>
+			</div>
+			
+			<!-- SECTION ACTITIES -->
+			<div class="jumbotron" id="activities" style="background: url('img/bg1.png'); background-size: cover; margin-bottom: -30px;">
+				<h2 class="text-center linearAnimObj" style="color: blue;">RECENTLY ACTIVITIES</h2>
+				<div style="color: white; font-size: 35px; text-align: center;">----<i class="fa fa-star-o"></i>----</div>
+				
+				<div class="row">
+					<div class="col-md-6 col-lg-4 mb-5">
+		              <figure class="img-fluid snip1104 blue">
+						  <img src="img/portfolio/ToeicMockTest.png" alt="Toeic Mock Test" />
+						  <figcaption>
+						    <h2>TOEIC <span> Mock Test</span></h2>
+						  </figcaption>
+						</figure>
+		          	</div>
+		          	<div class="col-md-6 col-lg-4 mb-5">
+		              <figure class="img-fluid snip1104 blue">
+						  <img src="img/portfolio/DaNgoai.png" alt="Dã ngoại Thảo Cầm Viên" />
+						  <figcaption>
+						    <h2>Thao Cam Vien <span> Picnic</span></h2>
+						  </figcaption>
+						  <!-- <a href="#"></a> -->
+						</figure>
+		          	</div>
 					
-					<div class="carousel-item">
-						<div style="text-align: center;"><p style="color:blue; font-weight: bold; font-size:30px;">SPEAKING ENGLISH ACTIVITIES</p><p style="color: #EEEEEE; font-size: 12px;">Updated 27 - 02 - 2019</p>The previous Tet holiday was quite short, right? But wait, AD haven't received any Lucky money yet! 😂<br/>
-
-How was your first week back to school? Hmm, do you guys remember ITEC's Speaking English Activities? Unforgettable, right? So this Friday, please note that you will come to ITEC and practice English with all ITEC's members.<br/><a href="https://www.facebook.com/ouitenglishclub/photos/a.360633020738463/1494077144060706/?type=3&theater"> Detail</a></div><br/>
-                      <img class="img-fluid mb-5" src="img/ITEC News/S.E.A_01-03.png" alt="Tet Holiday" style="height:500px !important; width: auto; margin: 0 auto !important; display: block; padding-bottom: 60px;" />
-                    </div>
+				  	<div class="col-md-6 col-lg-4 mb-5">
+		              <figure class="img-fluid snip1104 blue">
+						  <img src="img/portfolio/EnglishCamp.png" alt="English Camp HSV Thành Phố" />
+						  <figcaption>
+						    <h2>English <span> Camp</span></h2>
+						  </figcaption>
+						</figure>
+		          	</div>
 					
-					<!-- Left and right controls -->
-                  <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                    <span class="carousel-control-prev-icon" style="display: none;"></span>
-                  </a>
-                  <a class="carousel-control-next" href="#demo" data-slide="next">
-                    <span class="carousel-control-next-icon" style="display: none;"></span>
-                  </a>
-                  </div>
-              </div>
-			  
-             <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-			 
-        <div class="text-center mt-4">
-          <a class="btn btn-xl btn-outline-light" href="https://www.facebook.com/ouitenglishclub/">
-            <i class="fas mr-2"></i>
-            VISIT OUR FANPAGE
-          </a>
-        </div>
-      </div>
-    </section>
-    
-    <!-- Portfolio Grid Section -->
-    <section class="portfolio" id="portfolio">
-      <div class="container">
-        <h2 class="text-center text-uppercase text-secondary mb-0">Activities</h2>
-        <hr class="star-dark mb-5">
-        <div class="row">
-          <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fas fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/TAE01.png" alt=""/>
-            </a>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-2">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fas fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/ITEC_Startup.png" alt="">
-            </a>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-3">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fas fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/Ve nguon 00.png" alt="">
-            </a>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-4">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fas fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/TOEIC_Mock_Test01.png" alt="">
-            </a>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-5">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fas fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/S.E.A00.png" alt="">
-            </a>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-6">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fas fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/Sharing00.png" alt="">
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
+				  	<div class="col-md-6 col-lg-4 mb-5">
+		              <figure class="img-fluid snip1104 blue">
+						  <img src="img/portfolio/PhatComTuThien.png" alt="Hoạt động tình nguyện" />
+						  <figcaption>
+						    <h2>Volunteering <span> Activities</span></h2>
+						  </figcaption>
+						</figure>
+		          	</div>
+					
+					<div class="col-md-6 col-lg-4 mb-5">
+		              <figure class="img-fluid snip1104 blue">
+						  <img src="img/portfolio/Traodoisinhvien.png" alt="Trao đổi sinh viên" />
+						  <figcaption>
+						    <h2>Internship <span> Exchange</span></h2>
+						  </figcaption>
+						</figure>
+		          	</div>
+					
+					<div class="col-md-6 col-lg-4 mb-5">
+		              <figure class="img-fluid snip1104 blue">
+						  <img src="img/portfolio/VeNguon.png" alt="ITEC Starup" />
+						  <figcaption>
+						    <h2>Back to <span> History</span></h2>
+						  </figcaption>
+						</figure>
+		          	</div>
+		        </div>
+			</div>
+			
+			<!-- SECTION CONTACT -->
+			<div class="jumbotron" id="contact" style="margin-bottom: 0px; background: #2c3e50;" >
+				<form method="post" action="" style="margin-bottom: 50px;">
+					<h3 class="text-white linearAnimObj text-center">SEND US YOUR QUESTION</h3>
+					<div style="color: orange; font-size: 35px; text-align: center; margin-bottom: 20px;">----<i class="fa fa-star-o"></i>----</div>
+					<div class="row">
+						<div class="col-md-6 col-sm-12">
+							
+							<div class="input-group mb-3">
+							  <div class="input-group-prepend">
+								<span class="input-group-text " id="subject">Subject</span>
+							  </div>
+							  <input type="text" required class="form-control bg-transparent text-light" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+							</div>
 
-    <!-- About Section -->
-    <section class="bg-primary text-white mb-0" id="about">
-      <div class="container">
-        <h2 class="text-center text-uppercase text-white">About us</h2>
-        <hr class="star-light mb-5">
-        <div class="row">
-          <div class="col-lg-4 ml-auto">
-            <p class="lead font-text">OU-IT’s English Club, directly under Faculty of Information Technology. Established on Aug 10th, 2013, running by students with highly support from Lectures.
-			With our slogan “Lead your passion”, we’re always try our best to inspire students to learn English more effectively. ITEC’s activities are intended to create an active environment for all English lovers, through those things with us, you may improve yourself in both soft-skill and English-skill which are such as teamwork, presenting, critical thinking, … or speaking and listening skill (in English) – those are not offer much in our lesson in the school!
-			Moreover, how can it be when you’re an ITEC member? Like a home! You may practise more with us, focus on soft-skill and training your attitude, those are what the employee want to see from you, more than just knowledge!</p>
-          </div>
-          <div class="col-lg-4 mr-auto">
-            <p class="lead font-text">So, what did, what do, and what will we do? If you want to try a real TOEIC test but with just 1$ for fee, come to our TOEIC Mock Test. If you want to have an English environment or just a partner to practise speaking and listening English, come to our Speaking English Activities.
-			There are lots of documents to learn English on the Internet but you don’t have able to find out which one is suit for you, or just like you don’t confide in those things, don’t be worry, we will offer for you on our Fanpage!
-			Our secret activities are waiting for you to take an adventure! And now, follow us, and enjoy undergraduate time with us!</p>
-          </div>
-        </div>
-        <div class="text-center mt-4">
-          <a class="btn btn-xl btn-outline-light" href="https://www.facebook.com/ouitenglishclub/videos/715369758798249/">
-            <i class="fas mr-2"></i>
-            VIDEO INTRODUCTION
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 mb-5 mb-lg-0">
-            <h4 class="text-uppercase mb-4">Location</h4>
-            <p class="lead mb-0">HCMC Open University
-              <br>371 Nguyen Kiem, Ward 03, Go Vap</p>
-          </div>
-          <div class="col-md-4 mb-5 mb-lg-0">
-            <h4 class="text-uppercase mb-4">Around the Web</h4>
-            <ul class="list-inline mb-0">
-              <li class="list-inline-item">
-                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.facebook.com/ouitenglishclub/" title="Fanpage">
-                  <i class="fab fa-fw fa-facebook-f"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://mail.google.com/" title="Gmail">
-                  <i class="fab fa-fw fa-google-plus-g"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <h4 class="text-uppercase mb-4">PRESIDENT CONTACT</h4>
-            <p class="lead mb-0">Hotline: 0979 541 934 (Mr. Bay)<br/>
-            Facebook: <a href="https://www.facebook.com/NVB.68P1" target="_blank" style="text-decoration:none;">Jason Nguyen</a>
-            <br/>Email: 
-              <a href="mailto:ouit.englishclub2013@gmail" style="text-decoration:none;" target="_blank">ouit.englishclub2013@gmail.com</a></p>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <div class="copyright py-4 text-center text-white">
-      <div class="container">
-        <strong style="font-size:20px;">Copyright &copy; ITEC 2019</strong>
-      </div>
-    </div>
-
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-to-top d-lg-none position-fixed ">
-      <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
-        <i class="fa fa-chevron-up"></i>
-      </a>
-    </div>
-
-    <!-- Portfolio Modals -->
-
-    <!-- Portfolio Modal 1 -->
-    <div class="portfolio-modal mfp-hide" id="portfolio-modal-1">
-      <div class="portfolio-modal-dialog bg-white">
-        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-          <i class="fa fa-3x fa-times"></i>
-        </a>
-        <div class="container text-center">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0">THE AMAZING EXPERIENCE<br/>THẢO CẦM VIÊN SÀI GÒN 10 - 11 - 2013</h2>
-              <hr class="star-dark mb-5">
-              
-              <!-- ====================== SLIDESHOW ============================= -->
-              <div id="demo" class="carousel slide" data-ride="carousel">
-                
-                  <!-- Indicators -->
-                  <ul class="carousel-indicators">
-                    <li data-target="#demo" data-slide-to="0" class="active"></li>
-                    <li data-target="#demo" data-slide-to="1"></li>
-                    <li data-target="#demo" data-slide-to="2"></li>
-                  </ul>
-              <!-- The slideshow -->
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <img class="img-fluid mb-5" src="img/portfolio/TAE02.png" alt="The Amazing Experience" />
-                    </div>
-                    <div class="carousel-item">
-                      <img class="img-fluid mb-5" src="img/portfolio/TAE03.png" alt="The Amazing Experience" />
-                    </div>
-                    <div class="carousel-item">
-                      <img class="img-fluid mb-5" src="img/portfolio/TAE04.png" alt="The Amazing Experience" />
-                    </div>
-                  </div>
-                  
-                  <!-- Left and right controls -->
-                  <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                  </a>
-                  <a class="carousel-control-next" href="#demo" data-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                  </a>
-              </div>
-              
-              <!-- ===================================================================== -->
-              
-              <p class="mb-5 font-text">Nhằm tạo sân chơi và cơ hội được tham quan Thảo Cầm viên Sài Gòn. ITEC tổ chức chuyến đi dã ngoại dành cho các thành viên ITEC và sinh viên Trường Đại học Mở Tp. Hồ Chí Minh</p>
-              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                <i class="fa fa-close"></i>
-                CLOSE</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Portfolio Modal 2 -->
-    <div class="portfolio-modal mfp-hide" id="portfolio-modal-2">
-      <div class="portfolio-modal-dialog bg-white">
-        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-          <i class="fa fa-3x fa-times"></i>
-        </a>
-        <div class="container text-center">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0">ITEC STARTUP</h2>
-              <hr class="star-dark mb-5">
-              
-              <!-- ====================== SLIDESHOW ============================= -->
-              <div id="demo" class="carousel slide" data-ride="carousel">
-                
-                  <!-- Indicators -->
-                  <ul class="carousel-indicators">
-                    <li data-target="#demo" data-slide-to="0" class="active"></li>
-                    <li data-target="#demo" data-slide-to="1"></li>
-                    <li data-target="#demo" data-slide-to="2"></li>
-                  </ul>
-                  
-                  <!-- The slideshow -->
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <img class="img-fluid mb-5" src="img/portfolio/Start-up01.png" alt="Start-up01" />
-                    </div>
-                    <div class="carousel-item">
-                      <img class="img-fluid mb-5" src="img/portfolio/Start-up02.png" alt="Start-up02" />
-                    </div>
-                    <div class="carousel-item">
-                      <img class="img-fluid mb-5" src="img/portfolio/Start-up03.png" alt="Start-up03" />
-                    </div>
-                  </div>
-                  
-                  <!-- Left and right controls -->
-                  <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                  </a>
-                  <a class="carousel-control-next" href="#demo" data-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                  </a>
-              </div>
-              
-              <!-- ===================================================================== -->
-              
-              <p class="mb-5 font-text center-align">Chương trình giới thiệu Câu lạc bộ Tiếng Anh Khoa Công nghệ Thông tin<br/>Trường Đại học Mở thành phố Hồ Chí Minh<br/>Ngày 12 - 12 - 2015</p>
-              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                <i class="fa fa-close"></i>
-                CLOSE</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Portfolio Modal 3 -->
-    <div class="portfolio-modal mfp-hide" id="portfolio-modal-3">
-      <div class="portfolio-modal-dialog bg-white">
-        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-          <i class="fa fa-3x fa-times"></i>
-        </a>
-        <div class="container text-center">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0">CHƯƠNG TRÌNH VỀ NGUỒN CỦ CHI<br/>KHOA CNTT</h2>
-              <hr class="star-dark mb-5">
-              
-              <!-- ====================== SLIDESHOW ============================= -->
-              <div id="demo" class="carousel slide" data-ride="carousel">
-                
-                  <!-- Indicators -->
-                  <ul class="carousel-indicators">
-                    <li data-target="#demo" data-slide-to="0" class="active"></li>
-                    <li data-target="#demo" data-slide-to="1"></li>
-                    <li data-target="#demo" data-slide-to="2"></li>
-                  </ul>
-              <!-- The slideshow -->
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <img class="img-fluid mb-5" src="img/portfolio/Ve nguon 01.jpg" alt="Tham quan Củ Chi" />
-                    </div>
-                    <div class="carousel-item">
-                      <img class="img-fluid mb-5" src="img/portfolio/Ve nguon 02.png" alt="Tham quan Củ Chi" />
-                    </div>
-                    <div class="carousel-item">
-                      <img class="img-fluid mb-5" src="img/portfolio/Ve nguon 03.png" alt="Tham quan Củ Chi" />
-                    </div>
-                  </div>
-                  
-                  <!-- Left and right controls -->
-                  <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                  </a>
-                  <a class="carousel-control-next" href="#demo" data-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                  </a>
-              </div>
-              
-              <!-- ===================================================================== -->
-              <p class="mb-5 font-text">Nhằm Tuyên truyền, ôn lại truyền thống lịch sử vẻ vang của Đoàn TNCS Hồ Chí Minh, của tuổi trẻ Việt Nam và thành tích chiến công to lớn vĩ đại của dân tộc ta. Tổ chức cho các bạn Đoàn viên Thanh niên có được các hoạt động vui chơi, giao lưu học hỏi lẫn nhau sau những giờ học trên lớp, rèn luyện kỹ năng sống cho Sinh viên. BCH Khoa Công Nghệ Thông tin Trường ĐH Mở Thành Phố Hồ Chí Minh cùng sự hỗ trợ từ các thành viên ITEC, tổ chức Chương trình Về nguồn Củ Chi - Cuộc Chiến từ Lòng đất.<br/>
-Thành phần tham gia: Sinh viên Trường ĐH Mở TP HCM.<br/>
-Địa điểm Tham quan: Khu di tích Lịch sử Địa Đạo Củ Chi.</p>
-              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                <i class="fa fa-close"></i>
-                CLOSE</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Portfolio Modal 4 -->
-    <div class="portfolio-modal mfp-hide" id="portfolio-modal-4">
-      <div class="portfolio-modal-dialog bg-white">
-        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-          <i class="fa fa-3x fa-times"></i>
-        </a>
-        <div class="container text-center">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0">THI THỬ TOEIC<br/>HOẠT ĐỘNG HẰNG NĂM</h2>
-              <hr class="star-dark mb-5">
-              
-              <!-- ====================== SLIDESHOW ============================= -->
-              <div id="demo" class="carousel slide" data-ride="carousel">
-                
-                  <!-- Indicators -->
-                  <ul class="carousel-indicators">
-                    <li data-target="#demo" data-slide-to="0" class="active"></li>
-                    <li data-target="#demo" data-slide-to="1"></li>
-                    <li data-target="#demo" data-slide-to="2"></li>
-                  </ul>
-              <!-- The slideshow -->
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <img class="img-fluid mb-5" src="img/portfolio/TOEIC_Mock_Test02.png" alt="Toeic Mock Test" />
-                    </div>
-                    <div class="carousel-item">
-                      <img class="img-fluid mb-5" src="img/portfolio/TOEIC_Mock_Test03.png" alt="Toeic Mock Test" />
-                    </div>
-                    <div class="carousel-item">
-                      <img class="img-fluid mb-5" src="img/portfolio/TOEIC_Mock_Test04.png" alt="Toeic Mock Test" />
-                    </div>
-                  </div>
-                  
-                  <!-- Left and right controls -->
-                  <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                  </a>
-                  <a class="carousel-control-next" href="#demo" data-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                  </a>
-              </div>
-              
-              <!-- ===================================================================== -->
-              
-              <p class="mb-5 font-text">📖Nhằm đáp ứng nhu cầu ngày càng cao của phần đông học sinh, sinh viên về trình độ Tiếng Anh, cũng như tạo không khí thi cử nghiêm túc, chuẩn bị cho các kỳ thi quan trọng, CLB ITEC tổ chức kì thi thử TOEIC dành cho sinh viên📖
-
-<br/>📣Lợi ích của thi thử: 
-<br/>🔸Giúp sinh viên có điều kiện làm quen với các bài thi TOEIC. 
-<br/>🔸Giúp sinh viên tự đánh giá kiến thức, trình độ Tiếng Anh của mình. 
-<br/>🔸Tích lũy kinh nghiệm, ổn định tâm lý để có sự tự tin cần thiết khi đi thi thật. 
-</p>
-              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                <i class="fa fa-close"></i>
-                CLOSE</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Portfolio Modal 5 -->
-    <div class="portfolio-modal mfp-hide" id="portfolio-modal-5">
-      <div class="portfolio-modal-dialog bg-white">
-        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-          <i class="fa fa-3x fa-times"></i>
-        </a>
-        <div class="container text-center">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0">SPEAKING ENGLISH ACTIVITIES (S.E.A)<br/>HOẠT ĐỘNG HÀNG TUẦN</h2>
-              <hr class="star-dark mb-5">
-              
-              <!-- ====================== SLIDESHOW ============================= -->
-              <div id="demo" class="carousel slide" data-ride="carousel">
-                
-                  <!-- Indicators -->
-                  <ul class="carousel-indicators">
-                    <li data-target="#demo" data-slide-to="0" class="active"></li>
-                    <li data-target="#demo" data-slide-to="1"></li>
-                    <li data-target="#demo" data-slide-to="2"></li>
-                  </ul>
-              <!-- The slideshow -->
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <img class="img-fluid mb-5" src="img/portfolio/S.E.A01.png" alt="S.E.A" />
-                    </div>
-                    <div class="carousel-item">
-                      <img class="img-fluid mb-5" src="img/portfolio/S.E.A02.png" alt="S.E.A" />
-                    </div>
-                    <div class="carousel-item">
-                      <img class="img-fluid mb-5" src="img/portfolio/S.E.A03.png" alt="S.E.A" />
-                    </div>
-                  </div>
-                  
-                  <!-- Left and right controls -->
-                  <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                  </a>
-                  <a class="carousel-control-next" href="#demo" data-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                  </a>
-              </div>
-              
-              <!-- ===================================================================== -->
-              
-              <p class="mb-5 font-text">😥😥 Bạn sợ nói tiếng Anh, nhưng nó lại thực sự cần thiết với bạn?<br/> 
-
-Bạn không có thời gian, hay hạn hẹp về chi phí khi lựa chọn học giao tiếp tại các trung tâm?<br/>
-
-Thời gian thực hành trên lớp quá hạn hẹp?<br/>
-
-Tại sao không tìm một nơi có thể vừa học vừa chơi, vừa có thêm nhiều bạn mới, mà lại miễn phí, miễn phí thật đó?<br/>
-
-🌟🌟 Câu lạc bộ Tiếng Anh khoa Công nghệ Thông tin thấu hiểu được mong muốn của các bạn sinh viên!<br/>
-
-Vì vậy, vào chiều thứ Sáu của tuần thứ 2 và thứ 4 của mỗi tháng, (17g30 - 19g00) hãy nhớ đến sinh hoạt cùng ITEC nhé!<br/>
-
-Vui chơi có quà, và còn được cộng 5 điểm rèn luyện nữa chứ! Vậy thì còn lý do gì mà không tham gia ngay?</p>
-              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                <i class="fa fa-close"></i>
-                CLOSE</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Portfolio Modal 6 -->
-    <div class="portfolio-modal mfp-hide" id="portfolio-modal-6">
-      <div class="portfolio-modal-dialog bg-white">
-        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-          <i class="fa fa-3x fa-times"></i>
-        </a>
-        <div class="container text-center">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0">ITEC SHARING</h2>
-              <hr class="star-dark mb-5">
-              
-              <!-- ====================== SLIDESHOW ============================= -->
-              <div id="demo" class="carousel slide" data-ride="carousel">
-                
-                  <!-- Indicators -->
-                  <ul class="carousel-indicators">
-                    <li data-target="#demo" data-slide-to="0" class="active"></li>
-                    <li data-target="#demo" data-slide-to="1"></li>
-                    <li data-target="#demo" data-slide-to="2"></li>
-                  </ul>
-              <!-- The slideshow -->
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <img class="img-fluid mb-5" src="img/portfolio/Sharing01.png" alt="Sharing" />
-                    </div>
-                    <div class="carousel-item">
-                      <img class="img-fluid mb-5" src="img/portfolio/Sharing02.png" alt="Sharing" />
-                    </div>
-                    <div class="carousel-item">
-                      <img class="img-fluid mb-5" src="img/portfolio/Sharing03.png" alt="Sharing" />
-                    </div>
-                  </div>
-                  
-                  <!-- Left and right controls -->
-                  <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                  </a>
-                  <a class="carousel-control-next" href="#demo" data-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                  </a>
-              </div>
-              
-              <!-- ===================================================================== -->
-              
-              <p class="mb-5 font-text">ITEC chia sẻ tài liệu học tập, các thủ thuật học tiếng Anh nhằm truyền cảm hứng động lực cho các bạn sinh viên trong việc học tập tiếng Anh ngày một tốt hơn, đáp ứng kịp thời yêu cầu của xã hội.</p>
-              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                <i class="fa fa-close"></i>
-                CLOSE</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="js/freelancer.min.js"></script>
-
-  </body>
-
+							<div class="input-group mb-3">
+							  <div class="input-group-prepend">
+								<span class="input-group-text" id="email">Email</span>
+							  </div>
+							  <input type="text" required class="form-control bg-transparent text-light" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+							</div>
+						</div>
+						<div class="col-md-6 col-sm-12">
+							<textarea required style="width: 100%;" rows="7" class="rounded bg-transparent border-light text-light p-2" id="guest-request" placeholder="Sorry, we are in developing this! Please contact us follow Fanpage or Phone! Thank you!"></textarea>
+						</div>
+						<div class="col-sm-12">
+							<button class="btn btn-xl btn-outline-success btn-block" disabled="" style="cursor: not-allowed;">Send now</button>
+						</div>
+					</div>
+				</form>
+				<footer class="footer text-center text-white">
+		      <div class="container">
+		        <div class="row">
+		          <div class="col-md-6 mb-5 mb-lg-0">
+		            <h4 class="text-uppercase mb-4"><i class="fa fa-map-marker" aria-hidden="true"></i> Location</h4>
+		            	<div class="mapouter center-align">
+				      		<div class="gmap_canvas">
+				      			<iframe width="380" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=Open%20University%20371%20Nguyen%20Kiem&t=&z=9&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+				      		<a href="https://www.enable-javascript.net">
+				      			
+				      		</a>
+				      	</div>
+				      	<style>.mapouter{position:relative;text-align:center;height:300px;width:380;}.gmap_canvas {overflow:hidden;background:none!important;height:300px;width:500px;}</style>
+				      </div>
+		          </div>
+		          <div class="col-md-6 mb-5 mb-lg-0">
+		            <h4 class="text-uppercase mb-4">Around the Web</h4>
+		            <img src="img/Logo-Khoa-Truong-CLB.png" width="380" />
+		            <ul class="list-inline mb-0">
+		              <li class="list-inline-item">
+		                <a class="btn btn-outline-light btn-social text-center" href="https://www.facebook.com/ouitenglishclub/" title="Fanpage">
+		                  &nbsp;&nbsp;<i class="fa fa-facebook fa-2x" aria-hidden="true"></i>&nbsp;&nbsp;
+		                </a>
+		              </li>
+		              <li class="list-inline-item">
+		                <a class="btn btn-outline-light btn-social text-center" href="mailto:ouitenglishclub2013@gmail.com" title="Gmail">
+		                  <i class="fa fa-google-plus fa-2x" aria-hidden="true"></i>
+		                </a>
+		              </li>
+		            </ul>
+		            <span class="btn btn-block">Phone: (097) 954 19 34</span>
+		          </div>
+		          </div>
+		      </div>
+		      <div class="text-right" style="margin: 20px 0px -50px 0px;">ITEC &copy; 2019 Version 1.0.3</div>
+		    </footer>
+			</div>
+			<a href="#" class="btn btn-danger" style="position: fixed; bottom: 5px; left: 48.5%; opacity: .8"><i class="fa fa-chevron-up"></i></a>
+		</div>
+		
+		<!-- Optional JavaScript -->
+    	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	</body>
 </html>
